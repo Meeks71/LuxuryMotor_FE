@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Image Banner -->
+    <header class="header">
+    <center>   <img src="luxury_motors_inc-pic-1426514257329148238-200x200.jpeg" alt="Car Inventory Banner"></center>
+        <h1>Welcome to the Luxury Motor Inventory Management System</h1>
+    </header>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Warehouses</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        <div class="button-group">
+            <button class="action-button add-button">Add</button>
+            <button class="action-button delete-button">Delete</button>
+            <button class="action-button update-button">Update</button>
+            <button class="action-button list-button">List</button>
+        </div>
+    </nav>
+
+    <!-- Summary Section -->
+    <section class="summary">
+        <div class="card">
+            <h2>Total Cars</h2>
+            <p>10</p>
+        </div>
+        <div class="card">
+            <h2>Total Warehouses</h2>
+            <p>2</p>
+        </div>
+        <div class="card">
+            <h2>Revenue</h2>
+            <p>$1,250,000</p>
+        </div>
+    </section>
+
+    <!-- Car Information Section -->
+    <section class="car-info">
+        <h2>Car Information</h2>
+        <table class="car-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Warehouse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Car rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
